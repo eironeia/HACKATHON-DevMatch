@@ -18,7 +18,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var password: UITextField!
 
     let lista1 = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16"]
-    let lista2 = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","ñ","o"]
 
     @IBOutlet weak var registerButton: UIButton!
     
@@ -30,10 +29,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-      //  self.tablaDos.dataSource = self
-        //self.tablaDos.delegate = self
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -75,22 +70,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        if tableView == self.tablaUno {
             return lista1.count
-        } else {
-            return lista2.count
-        }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let celda: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("Celda")!
         
-        if tableView == self.tablaUno {
-            celda.textLabel?.text = lista1[indexPath.row]
-        } else {
-            celda.textLabel?.text = lista2[indexPath.row]
-        }
+        celda.textLabel?.text = lista1[indexPath.row]
+
+        
         return celda
     }
 
