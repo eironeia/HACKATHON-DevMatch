@@ -10,7 +10,8 @@ import UIKit
 import SlideMenuControllerSwift
 import Alamofire
 
-let URI = "http://devmatch-hackaton.herokuapp.com"
+//let URI = "http://devmatch-hackaton.herokuapp.com"
+let URI = "http://localhost:1337"
 
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -37,9 +38,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*func login() {
-        Alamofire.request(.GET, URIparameters: ["name": self.username.text!, "password": self.password.text!]).responseJSON {
+    @IBAction func signinTapped(sender: AnyObject) {
+        Alamofire.request(.POST, URI+"/login",parameters: ["email": self.username.text!, "password": self.password.text!]).responseJSON {
             response in
             switch (response.result){
             case .Success(let value):
@@ -51,10 +51,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 print(error)
             }
         }
-    }*/
+    }
     
     @IBAction func onRegisterTapped(sender: AnyObject) {
-        Alamofire.request(.POST, URI+"/user", parameters: ["username": self.username.text!, "password": self.password.text!])
+        Alamofire.request(.POST, URI+"/user", parameters: ["email": self.username.text!, "password": self.password.text!])
             .responseJSON {
                 response in
                 switch (response.result){
