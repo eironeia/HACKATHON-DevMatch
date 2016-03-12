@@ -17,7 +17,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
 
-    let lista1 = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16"]
+    let lista1 = ["a","b","c"]
+    let lista2 = ["1","2","3"]
 
     @IBOutlet weak var registerButton: UIButton!
     
@@ -74,11 +75,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let celda: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("Celda")!
-        
-        celda.textLabel?.text = lista1[indexPath.row]
-
-        
+        //let celda: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("Celda") as! CustomCell
+        let celda = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! CustomCell
+        //celda.textLabel?.text = lista1[indexPath.row]
+        celda.works.text = lista1[indexPath.row]
+        celda.yeah.text = lista2[indexPath.row]
         return celda
     }
 
