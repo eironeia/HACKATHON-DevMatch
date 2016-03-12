@@ -33,6 +33,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="signinTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mx5-Do-n3f"/>
                                     <segue destination="F8n-rX-1ip" kind="show" id="lb5-56-btw"/>
                                 </connections>
                             </button>
@@ -427,8 +428,8 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="CuJ-ts-Rrh"/>
                                 <exclude reference="10W-Dg-V4h"/>
+                                <exclude reference="CuJ-ts-Rrh"/>
                             </mask>
                         </variation>
                     </view>
