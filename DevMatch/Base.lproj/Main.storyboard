@@ -41,17 +41,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZk-aN-MgG">
-                                <rect key="frame" x="133" y="560" width="137" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Register Now"/>
-                                <connections>
-                                    <action selector="onRegisterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bFZ-E3-EN6"/>
-                                    <segue destination="F8n-rX-1ip" kind="show" id="vN7-lN-WNT"/>
-                                </connections>
-                            </button>
-
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Languages" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KnP-iy-ImQ">
                                 <rect key="frame" x="112" y="479" width="190" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -99,12 +88,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZk-aN-MgG">
-                                <rect key="frame" x="112" y="566" width="190" height="40"/>
+                                <rect key="frame" x="133" y="560" width="137" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Register Now" backgroundImage="redCarpetbg">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <state key="normal" title="Register Now"/>
                                 <connections>
+                                    <action selector="onRegisterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bFZ-E3-EN6"/>
                                     <segue destination="F8n-rX-1ip" kind="show" id="vN7-lN-WNT"/>
                                 </connections>
                             </button>
