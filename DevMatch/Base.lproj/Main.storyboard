@@ -115,7 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-411" y="175"/>
+            <point key="canvasLocation" x="-503" y="65"/>
         </scene>
         <!--Menu-->
         <scene sceneID="FdB-0j-3v7">
@@ -408,23 +408,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vJ7-aG-de8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1885" y="-609"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Nmx-gP-IDA">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b1a-5T-ECb" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6wn-K6-Cke">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tz2-aT-OWa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1368.5" y="-643.5"/>
+            <point key="canvasLocation" x="1209" y="-584"/>
         </scene>
     </scenes>
     <resources>
