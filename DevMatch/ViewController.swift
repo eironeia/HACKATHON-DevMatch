@@ -8,9 +8,15 @@
 
 import UIKit
 import SlideMenuControllerSwift
+import Alamofire
+
+let URI = "http://devmatch-hackaton.herokuapp.com"
 
 class ViewController: UIViewController {
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: UITextField!
 
+    @IBOutlet weak var registerButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,6 +27,39 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    /*func login() {
+        Alamofire.request(.GET, URIparameters: ["name": self.username.text!, "password": self.password.text!]).responseJSON {
+            response in
+            switch (response.result){
+            case .Success(let value):
+                print(value)
+            case .Failure(let error):
+                if let data = response.data, let string = String(data: data, encoding: NSUTF8StringEncoding) {
+                    print(string)
+                }
+                print(error)
+            }
+        }
+    }*/
+    
+    @IBAction func onRegisterTapped(sender: AnyObject) {
+        Alamofire.request(.POST, URI+"/user", parameters: ["username": self.username.text!, "password": self.password.text!])
+            .responseJSON {
+                response in
+                switch (response.result){
+                case .Success(let value):
+                    print(value)
+                case .Failure(let error):
+                    if let data = response.data, let string = String(data: data, encoding: NSUTF8StringEncoding) {
+                        print(string)
+                    }
+                    print(error)
+                }
+        }
+
+    }
+
 
 
 }

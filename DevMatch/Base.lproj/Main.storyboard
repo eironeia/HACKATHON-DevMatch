@@ -44,6 +44,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Register Now"/>
                                 <connections>
+                                    <action selector="onRegisterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bFZ-E3-EN6"/>
                                     <segue destination="F8n-rX-1ip" kind="show" id="vN7-lN-WNT"/>
                                 </connections>
                             </button>
@@ -118,6 +119,11 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="password" destination="BPv-bv-BaN" id="jxL-PX-mW4"/>
+                        <outlet property="registerButton" destination="kZk-aN-MgG" id="15d-FW-FiC"/>
+                        <outlet property="username" destination="TUN-ce-nnZ" id="tQD-fS-Jkj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -331,6 +337,6 @@
         <image name="wallpaper" width="2560" height="1440"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vN7-lN-WNT"/>
+        <segue reference="lb5-56-btw"/>
     </inferredMetricsTieBreakers>
 </document>
