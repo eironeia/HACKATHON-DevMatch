@@ -41,6 +41,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZk-aN-MgG">
+                                <rect key="frame" x="133" y="560" width="137" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Register Now"/>
+                                <connections>
+                                    <action selector="onRegisterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bFZ-E3-EN6"/>
+                                    <segue destination="F8n-rX-1ip" kind="show" id="vN7-lN-WNT"/>
+                                </connections>
+                            </button>
+
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Languages" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KnP-iy-ImQ">
                                 <rect key="frame" x="112" y="479" width="190" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -108,6 +119,11 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="password" destination="BPv-bv-BaN" id="jxL-PX-mW4"/>
+                        <outlet property="registerButton" destination="kZk-aN-MgG" id="15d-FW-FiC"/>
+                        <outlet property="username" destination="TUN-ce-nnZ" id="tQD-fS-Jkj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -429,6 +445,6 @@
         <image name="wallpaper" width="2560" height="1440"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vN7-lN-WNT"/>
+        <segue reference="lb5-56-btw"/>
     </inferredMetricsTieBreakers>
 </document>
