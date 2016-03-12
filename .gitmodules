@@ -1,0 +1,6 @@
+[submodule "MFSideMenu"]
+	path = MFSideMenu
+	url = git@github.com:mikefrederick/MFSideMenu.git
+[submodule "SlideMenuControllerSwift"]
+	path = SlideMenuControllerSwift
+	url = git@github.com:dekatotoro/SlideMenuControllerSwift.git
