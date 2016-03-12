@@ -10,7 +10,10 @@ import UIKit
 
 class CustomCell: UITableViewCell {
 
-    @IBOutlet var user: UILabel!
+
+    @IBOutlet var works: UILabel!
+    @IBOutlet var yeah: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,6 +23,9 @@ class CustomCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    func hello (){
+       
     }
 
 }
