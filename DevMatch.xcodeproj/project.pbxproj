@@ -13,7 +13,6 @@
 		9C9487FA1C9397B800B74070 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9487F81C9397B800B74070 /* Main.storyboard */; };
 		9C9487FC1C9397B800B74070 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C9487FB1C9397B800B74070 /* Assets.xcassets */; };
 		9C9487FF1C9397B800B74070 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9487FD1C9397B800B74070 /* LaunchScreen.storyboard */; };
-		9C9488141C93C55B00B74070 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9488131C93C55B00B74070 /* ContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		9C9487FB1C9397B800B74070 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C9487FE1C9397B800B74070 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C9488001C9397B800B74070 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C9488131C93C55B00B74070 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		A48A6FEB967D6EF050E33AA8 /* Pods-DevMatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevMatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevMatch/Pods-DevMatch.release.xcconfig"; sourceTree = "<group>"; };
 		AA2C11E506E2FBE85C3173A1 /* Pods-DevMatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevMatch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DevMatch/Pods-DevMatch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,7 +80,6 @@
 			children = (
 				9C9487F41C9397B800B74070 /* AppDelegate.swift */,
 				9C9487F61C9397B800B74070 /* ViewController.swift */,
-				9C9488131C93C55B00B74070 /* ContainerViewController.swift */,
 				9C9487F81C9397B800B74070 /* Main.storyboard */,
 				9C9487FB1C9397B800B74070 /* Assets.xcassets */,
 				9C9487FD1C9397B800B74070 /* LaunchScreen.storyboard */,
@@ -215,7 +212,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C9487F71C9397B800B74070 /* ViewController.swift in Sources */,
-				9C9488141C93C55B00B74070 /* ContainerViewController.swift in Sources */,
 				9C9487F51C9397B800B74070 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
