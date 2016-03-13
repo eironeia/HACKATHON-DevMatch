@@ -179,7 +179,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onRegisterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bFZ-E3-EN6"/>
-                                    <segue destination="F8n-rX-1ip" kind="show" id="vN7-lN-WNT"/>
+                                    <segue destination="F8n-rX-1ip" kind="show" id="TZf-UL-UNc"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sponsor1" translatesAutoresizingMaskIntoConstraints="NO" id="k7t-lg-bMT">

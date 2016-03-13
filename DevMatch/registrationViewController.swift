@@ -10,8 +10,7 @@ import UIKit
 import SlideMenuControllerSwift
 import Alamofire
 
-//let URI = "http://devmatch-hackaton.herokuapp.com"
-let URI = "http://localhost:1337"
+
 class registrationViewController: UIViewController {
     
     @IBOutlet weak var nameField: UILabel!
@@ -39,7 +38,7 @@ class registrationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func onRegisterTapped(sender: AnyObject) {
+    /*@IBAction func onRegisterTapped(sender: AnyObject) {
         Alamofire.request(.POST, URI+"/user", parameters: ["email": self.username.text!, "password": self.password.text!])
             .responseJSON {
                 response in
@@ -63,7 +62,7 @@ class registrationViewController: UIViewController {
                 }
         }
         
-    }
+    }*/
     
 
     /*
