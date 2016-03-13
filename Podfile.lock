@@ -1,13 +1,16 @@
 PODS:
   - Alamofire (3.2.1)
+  - Gloss (0.7.1)
   - SlideMenuControllerSwift (2.0.5)
 
 DEPENDENCIES:
   - Alamofire (~> 3.2)
+  - Gloss (~> 0.7)
   - SlideMenuControllerSwift (~> 2.0)
 
 SPEC CHECKSUMS:
   Alamofire: f11d8624a05f5d39e0c99309b3e600a3ba64298a
+  Gloss: e674d7aa06a7e292a591d0d39a759b826daf503e
   SlideMenuControllerSwift: 9dcae36265e14c4f42e729f212463beb60d2cf96
 
 COCOAPODS: 0.39.0

@@ -164,7 +164,7 @@
         <!--Menu-->
         <scene sceneID="FdB-0j-3v7">
             <objects>
-                <viewController title="Menu" id="F8n-rX-1ip" sceneMemberID="viewController">
+                <viewController title="Menu" id="F8n-rX-1ip" customClass="MenuViewController" customModule="DevMatch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6VA-iU-dH8"/>
                         <viewControllerLayoutGuide type="bottom" id="z4c-k1-nwQ"/>
@@ -229,6 +229,12 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="createEventButton" destination="gD5-Tw-8CL" id="J75-yP-VPO"/>
+                        <outlet property="createdButtonsButton" destination="esi-kc-zfb" id="p78-th-omN"/>
+                        <outlet property="matchesButton" destination="WLi-jn-sST" id="P8X-U4-IX5"/>
+                        <outlet property="profileButton" destination="qXw-rM-UOd" id="lfC-yn-M0f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xbx-tc-YFN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -595,6 +601,17 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="ageField" destination="Wlc-Bh-0kx" id="Rzn-ij-Xaf"/>
+                        <outlet property="cityField" destination="eWc-1X-5KF" id="4bd-O9-1LW"/>
+                        <outlet property="countryField" destination="fbB-Yi-FmT" id="Q9U-fu-hfw"/>
+                        <outlet property="emailField" destination="jNg-q5-oPY" id="eLz-po-f5b"/>
+                        <outlet property="lenguagesField" destination="Xgz-Y6-113" id="EjV-ND-uCa"/>
+                        <outlet property="nameField" destination="Fiy-ya-xR0" id="Hsg-C5-f9m"/>
+                        <outlet property="phoneField" destination="CaN-wl-csz" id="yu5-WR-Yl1"/>
+                        <outlet property="ratingField" destination="pez-5I-pId" id="vkK-o6-44D"/>
+                        <outlet property="surnameField" destination="ZQd-td-N1s" id="YRy-6V-JDz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V3l-w3-rsv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -685,7 +702,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vJ7-aG-de8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1211" y="-532"/>
+            
+            <point key="canvasLocation" x="1885" y="-609"/>
+
         </scene>
     </scenes>
     <resources>

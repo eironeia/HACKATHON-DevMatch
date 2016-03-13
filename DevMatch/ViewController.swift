@@ -20,7 +20,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     let lista1 = ["a","b","c"]
     let lista2 = ["1","2","3"]
+    var id = -1
+    @IBOutlet weak var nameField: UILabel!
+    @IBOutlet weak var surnameField: UILabel!
+    @IBOutlet weak var emailField: UILabel!
+    @IBOutlet weak var phoneField: UILabel!
+    @IBOutlet weak var ageField: UILabel!
+    @IBOutlet weak var cityField: UILabel!
+    @IBOutlet weak var countryField: UILabel!
+    @IBOutlet weak var lenguagesField: UILabel!
+    @IBOutlet weak var ratingField: UILabel!
+    
     let lista3 = ["1","2","3"]
+
 
     @IBOutlet weak var registerButton: UIButton!
     
@@ -43,7 +55,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             response in
             switch (response.result){
             case .Success(let value):
-                print(value)
+//                print(value)
+                
+                let jsonObject = value["user"] as! [String:AnyObject]
+                self.id = jsonObject["id"] as! Int
+                print("id \(self.id)")
+                if self.id > 0 {
+                    self.fillProfile()
+                }
+                
             case .Failure(let error):
                 if let data = response.data, let string = String(data: data, encoding: NSUTF8StringEncoding) {
                     print(string)
@@ -59,7 +79,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 response in
                 switch (response.result){
                 case .Success(let value):
-                    print(value)
+//                    print(value)
+                    
+                    let jsonObject = value["user"] as! [String:AnyObject]
+                    self.id = jsonObject["id"] as! Int
+                    print("id \(self.id)")
+                    if self.id > 0 {
+                        self.fillProfile()
+                    }
+                    
+                    
                 case .Failure(let error):
                     if let data = response.data, let string = String(data: data, encoding: NSUTF8StringEncoding) {
                         print(string)
@@ -84,6 +113,43 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         celda.yeah.text = lista2[indexPath.row]
         
         return celda
+    }
+    
+    func fillProfile() {
+        Alamofire.request(.GET, URI+"/user/\(self.id)")
+            .responseJSON {
+                response in
+                switch (response.result){
+                case .Success(let value):
+                    print(value)
+                    
+                    let surname = value["surname"] as! String
+                    
+                    if !surname.isEmpty {
+                        print(surname)
+                        self.surnameField.text = surname
+                    }
+                    
+                    let email = value["email"] as! String
+                    if !email.isEmpty {self.emailField.text = email}
+                    
+                    let phone = value["phone"] as! String
+                    if !phone.isEmpty {self.phoneField.text = phone}
+                    
+                    let age = value["age"] as! String
+                    if !age.isEmpty {self.ageField.text = age}
+                    
+                    /*let city = value["email"] as! String
+                    self.emailField.text = email*/
+                    
+                    
+                case .Failure(let error):
+                    if let data = response.data, let string = String(data: data, encoding: NSUTF8StringEncoding) {
+                        print(string)
+                    }
+                    print(error)
+                }
+        }
     }
 
 }

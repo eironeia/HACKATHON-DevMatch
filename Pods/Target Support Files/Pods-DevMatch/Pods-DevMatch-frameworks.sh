@@ -85,9 +85,11 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-DevMatch/Alamofire.framework"
+  install_framework "Pods-DevMatch/Gloss.framework"
   install_framework "Pods-DevMatch/SlideMenuControllerSwift.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-DevMatch/Alamofire.framework"
+  install_framework "Pods-DevMatch/Gloss.framework"
   install_framework "Pods-DevMatch/SlideMenuControllerSwift.framework"
 fi

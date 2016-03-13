@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Gloss.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-DevMatch.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>56A5AA113D16B57C3ADCEEC326FEFBC7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8EDAA0A2BB06BFBD423C3D537DC3A4F3</key>
+		<key>B07B012AE17952EE777271E277F90284</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FBA42F4D50AAD8B9DC795173817493F3</key>
+		<key>DFE88571819C3215345D5D45D0E15FF7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
