@@ -6,5 +6,6 @@ use_frameworks!
 target 'DevMatch' do
     pod 'SlideMenuControllerSwift', '~> 2.0'
     pod 'Alamofire', '~> 3.2'
+    pod 'Gloss', '~> 0.7'
 end
 
