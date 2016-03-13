@@ -13,6 +13,10 @@ class CustomCell: UITableViewCell {
 
     @IBOutlet var works: UILabel!
     @IBOutlet var yeah: UILabel!
+    @IBOutlet var nameEvent: UILabel!
+    @IBOutlet var dateEvent: UILabel!
+    @IBOutlet var hashtagEvents: UILabel!
+    @IBOutlet var descriptionEvent: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

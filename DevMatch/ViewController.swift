@@ -20,12 +20,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     let lista1 = ["a","b","c"]
     let lista2 = ["1","2","3"]
+    let lista3 = ["1","2","3"]
 
     @IBOutlet weak var registerButton: UIButton!
     
     // Matches List variables
     @IBOutlet weak var tablaUno: UITableView!
-    @IBOutlet weak var tablaDos: UITableView!
     
     
     override func viewDidLoad() {
@@ -76,10 +76,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         //let celda: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("Celda") as! CustomCell
+
         let celda = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! CustomCell
+
         //celda.textLabel?.text = lista1[indexPath.row]
         celda.works.text = lista1[indexPath.row]
         celda.yeah.text = lista2[indexPath.row]
+        
         return celda
     }
 
