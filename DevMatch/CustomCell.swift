@@ -17,6 +17,7 @@ class CustomCell: UITableViewCell {
     @IBOutlet var dateEvent: UILabel!
     @IBOutlet var hashtagEvents: UILabel!
     @IBOutlet var descriptionEvent: UILabel!
+    @IBOutlet var applyEvent: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,8 +29,6 @@ class CustomCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    func hello (){
-       
-    }
+
 
 }

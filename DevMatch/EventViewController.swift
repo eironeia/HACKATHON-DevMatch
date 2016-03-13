@@ -11,9 +11,10 @@ import UIKit
 
 class EventViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    let lista1 = ["a","b","c"]
-    let lista2 = ["1","2","3"]
-    let lista3 = ["Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. Eu sit tincidunt incorrupte definitionem, vis mutat affert percipit cu, eirmod consectetuer signiferumque eu per. In usu latine equidem dolores. Quo no falli viris intellegam, ut fugit veritus placerat per.","2","3"]
+    let lista1 = ["Alex Eironeia","Dirken Meyerofer","Michael Pinto", "Jose dormidron"]
+    let lista2 = ["10/5/2016 - 13/5/2016","23/4/2016 - 25/4/2016","5/7/9 - 7/7/9"]
+    let lista3 = ["c++, developer,app","IoT, Hackathon,","Fintech, money, app, developer"]
+    let lista4 = ["Finding C++ Developer to develop one amazing app.","Finding IoT dev to StartHack17'","Fintech people to incredible project"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +38,7 @@ class EventViewController: UIViewController, UITableViewDataSource, UITableViewD
         celdaEvent.nameEvent.text = lista1[indexPath.row]
         celdaEvent.dateEvent.text = lista2[indexPath.row]
         celdaEvent.descriptionEvent.text = lista3[indexPath.row]
-        celdaEvent.hashtagEvents.text = lista1[indexPath.row]
+        celdaEvent.hashtagEvents.text = lista4[indexPath.row]
 
         
         return celdaEvent

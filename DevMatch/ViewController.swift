@@ -118,6 +118,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 }
         }
     }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let menuViewController = segue.menuViewController as? MenuViewController {
+            menuViewController.id = self.id
+        }
+    }
 
 }
 
