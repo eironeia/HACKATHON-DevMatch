@@ -137,7 +137,7 @@
                                 <state key="normal" title="Register Now"/>
                                 <connections>
                                     <action selector="onRegisterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bFZ-E3-EN6"/>
-                                    <segue destination="F8n-rX-1ip" kind="show" id="vN7-lN-WNT"/>
+                                    <segue destination="F8n-rX-1ip" kind="show" identifier="" id="vN7-lN-WNT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -182,6 +182,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="onMatchesTapped:" destination="F8n-rX-1ip" eventType="touchUpInside" id="T3G-n2-BfF"/>
                                     <segue destination="QfQ-IC-h37" kind="show" id="hbs-38-uP0"/>
                                 </connections>
                             </button>
@@ -191,6 +192,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="onCreateEventTapped:" destination="F8n-rX-1ip" eventType="touchUpInside" id="7xX-yL-RBd"/>
                                     <segue destination="YhO-r8-WX8" kind="show" id="4gn-PN-o1Q"/>
                                 </connections>
                             </button>
@@ -206,6 +208,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="onProfileTapped:" destination="F8n-rX-1ip" eventType="touchUpInside" id="yOD-BU-Oet"/>
                                     <segue destination="d0R-aP-sOO" kind="show" id="MZ8-Na-tqP"/>
                                 </connections>
                             </button>
@@ -215,6 +218,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="onEventsTapped:" destination="F8n-rX-1ip" eventType="touchUpInside" id="yX6-HI-0ol"/>
                                     <segue destination="ffM-ig-1Zc" kind="show" id="Vea-4G-dY9"/>
                                 </connections>
                             </button>
@@ -702,9 +706,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vJ7-aG-de8" sceneMemberID="firstResponder"/>
             </objects>
-            
             <point key="canvasLocation" x="1885" y="-609"/>
-
         </scene>
     </scenes>
     <resources>
@@ -713,6 +715,6 @@
         <image name="wallpaper" width="2560" height="1440"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7Hg-UD-v4S"/>
+        <segue reference="vN7-lN-WNT"/>
     </inferredMetricsTieBreakers>
 </document>
