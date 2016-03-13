@@ -30,6 +30,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var countryField: UILabel!
     @IBOutlet weak var lenguagesField: UILabel!
     @IBOutlet weak var ratingField: UILabel!
+    
+    let lista3 = ["1","2","3"]
+
 
     @IBOutlet weak var registerButton: UIButton!
     
@@ -102,10 +105,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         //let celda: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("Celda") as! CustomCell
+
         let celda = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! CustomCell
+
         //celda.textLabel?.text = lista1[indexPath.row]
         celda.works.text = lista1[indexPath.row]
         celda.yeah.text = lista2[indexPath.row]
+        
         return celda
     }
     
