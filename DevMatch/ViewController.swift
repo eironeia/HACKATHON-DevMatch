@@ -21,20 +21,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     let lista1 = ["a","b","c"]
     let lista2 = ["1","2","3"]
     var id = -1
-    @IBOutlet weak var nameField: UILabel!
-    @IBOutlet weak var surnameField: UILabel!
-    @IBOutlet weak var emailField: UILabel!
-    @IBOutlet weak var phoneField: UILabel!
-    @IBOutlet weak var ageField: UILabel!
-    @IBOutlet weak var cityField: UILabel!
-    @IBOutlet weak var countryField: UILabel!
-    @IBOutlet weak var lenguagesField: UILabel!
-    @IBOutlet weak var ratingField: UILabel!
-    
+
     let lista3 = ["1","2","3"]
 
 
-    @IBOutlet weak var registerButton: UIButton!
+
     
     // Matches List variables
     @IBOutlet weak var tablaUno: UITableView!
@@ -73,31 +64,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     
-    @IBAction func onRegisterTapped(sender: AnyObject) {
-        Alamofire.request(.POST, URI+"/user", parameters: ["email": self.username.text!, "password": self.password.text!])
-            .responseJSON {
-                response in
-                switch (response.result){
-                case .Success(let value):
-//                    print(value)
-                    
-                    let jsonObject = value["user"] as! [String:AnyObject]
-                    self.id = jsonObject["id"] as! Int
-                    print("id \(self.id)")
-                    if self.id > 0 {
-                        self.fillProfile()
-                    }
-                    
-                    
-                case .Failure(let error):
-                    if let data = response.data, let string = String(data: data, encoding: NSUTF8StringEncoding) {
-                        print(string)
-                    }
-                    print(error)
-                }
-        }
 
-    }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return lista1.count
